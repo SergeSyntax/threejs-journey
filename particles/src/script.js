@@ -122,6 +122,8 @@ const tick = () => {
   // Update particles
   //   particles.rotation.y = -elapsedTime * 0.02;
 
+  //   You should get beautiful waves of particles. Unfortunately, you should avoid this technique. If we have 20000 particles, we are going through each one, calculating a new position, and updating the whole attribute on each frame. That can work with a small number of particles, but we want millions of particles.
+
   for (
     let xIndex = 0, yIndex = 1;
     xIndex < particlesGeometry.attributes.position.array.length;
